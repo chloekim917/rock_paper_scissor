@@ -9,6 +9,10 @@ elif comp == 2:
 else:
     comp = "SCISSORS"
 
+userWin = "I cannot believe this... How dare you human... You win..."
+userLose = "Haha you lose! I am a superior being."
+tie = "It's a tie! That wasn't too bad."
+
 while True:
     typed = input("Type 'rock' or 'paper' or 'scissors': ")
     if typed.upper() == 'ROCK':
@@ -16,33 +20,33 @@ while True:
         print(f"User: {user}")
         print(f"Computer: {comp}")
         if comp == 'ROCK':
-            print("It's a tie! Nice try")
+            print(tie)
         elif comp == "PAPER":
-            print("Haha you lose! I am a superior being")
+            print(userLose)
         else: 
-            print("I cannot believe this... How dare you human... You win...")
+            print(userWin)
         break
     elif typed.upper() == 'PAPER':
         user = 'PAPER'
         print(f"User: {user}")
         print(f"Computer: {comp}")
         if comp == 'ROCK':
-            print("I cannot believe this... How dare you human... You win...")
+            print(userWin)
         elif comp == "PAPER":
-            print("It's a tie! Nice try")
+            print(tie)
         else: 
-            print("Haha you lose! I am a superior being")
+            print(userLose)
         break
     elif typed.upper() == 'SCISSORS':
         user = 'SCISSORS'
         print(f"User: {user}")
         print(f"Computer: {comp}")
         if comp == 'ROCK':
-            print("Haha you lose! I am a superior being")
+            print(userLose)
         elif comp == "PAPER":
-            print("I cannot believe this... How dare you human... You win...")
+            print(userWin)
         else: 
-            print("It's a tie! Nice try")
+            print(tie)
         break
     else:
         print("Let's try this again")
