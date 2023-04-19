@@ -27,3 +27,5 @@ elif comp == 2:
 else:
     comp = "SCISSORS"
     print(f"Computer: {comp}")
+
+if 
